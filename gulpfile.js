@@ -28,9 +28,9 @@ var staticFiles = [
 // });
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src(appFolder + 'sass/screen.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(distFolder + './css'));
+    .pipe(gulp.dest(distFolder + 'css'));
   
 });
 
