@@ -8,12 +8,13 @@ var gutil   = require('gulp-util');
 var tsProject = ts.createProject('tsconfig.json');
 
 var appFolder  = 'app/',
-    distFolder = 'dist/';
+    distFolder = 'dist/',
+    distPictureFolder = 'dist/images/';
 
 var staticFiles = [
-  appFolder + '**/*.html',
-  appFolder + '**/*.jpg',
-  appFolder + '**/*.png',
+  // appFolder + '**/*.html',
+  appFolder + 'images/*.jpg',
+  appFolder + 'images/*.png',
 ];
 
 
@@ -44,7 +45,7 @@ gulp.task('ts', function() {
 
 gulp.task('static', function() {
   gulp.src(staticFiles)
-    .pipe(gulp.dest(distFolder))
+    .pipe(gulp.dest(distPictureFolder))
     .pipe(connect.reload());
 });
 
