@@ -22,8 +22,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 function secondAppComponent() {
                 }
                 secondAppComponent = __decorate([
-                    core_1.Component({
-                        selector: 'my-head',
+                    core_1.SecondComponent({
+                        selector: 'my-body',
                         templateUrl: 'app/templates/secondPage.html'
                     }), 
                     __metadata('design:paramtypes', [])
