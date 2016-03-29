@@ -31,7 +31,7 @@ gulp.task('sass', function () {
   return gulp.src(appFolder + 'sass/screen.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(distFolder + 'css'));
-  
+
 });
 
 gulp.task('ts', function() {
@@ -51,7 +51,8 @@ gulp.task('static', function() {
 gulp.task('connect', function() {
   connect.server({
     root: '',
-    livereload: true
+    livereload: true,
+    port:3000
   });
 });
 

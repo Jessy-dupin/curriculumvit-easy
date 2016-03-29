@@ -15,4 +15,3 @@ System.register(['angular2/platform/browser', './components/app.component'], fun
         }
     }
 });
-//# sourceMappingURL=boot.js.map
