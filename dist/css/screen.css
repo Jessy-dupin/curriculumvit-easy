@@ -1,0 +1,896 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  line-height: 1;
+  height: 100%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*body{
+	overflow: hidden;
+}*/
+.global {
+  background: #ffffff;
+  -moz-box-shadow: 0px 0px 15px 2px #3C3C3C;
+  -webkit-box-shadow: 0px 0px 15px 2px #3C3C3C;
+  -o-box-shadow: 0px 0px 15px 2px #3C3C3C;
+  box-shadow: 0px 0px 15px 2px #3C3C3C;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=5);
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  z-index: 9999;
+  width: 100%;
+  overflow-y: scroll;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in; }
+
+.global.active-left {
+  margin: 0 0 0 280px;
+  width: calc(100% - 280px); }
+  @media only screen and (max-width: 869px) {
+    .global.active-left {
+      width: 100%; }
+      .global.active-left .header, .global.active-left .content {
+        opacity: 0.2; } }
+
+.global.active-right {
+  margin: 0;
+  width: calc(100% - 280px); }
+  @media only screen and (max-width: 869px) {
+    .global.active-right {
+      margin: 0;
+      margin-left: -280px;
+      width: 100%; }
+      .global.active-right .header, .global.active-right .content {
+        opacity: 0.2; } }
+
+.left, .right {
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; }
+
+.left.active-left {
+  left: 0 !important;
+  z-index: 8888 !important; }
+
+.right.active-right {
+  right: 0 !important;
+  z-index: 8888 !important; }
+
+@font-face {
+  font-family: 'brandon_grotesquebold_italic';
+  src: url("fonts/brandon/brandon_bld_it-webfont.eot");
+  src: url("fonts/brandon/brandon_bld_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_bld_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_bld_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_bld_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_bld_it-webfont.svg#brandon_grotesquebold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquebold';
+  src: url("fonts/brandon/brandon_bld-webfont.eot");
+  src: url("fonts/brandon/brandon_bld-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_bld-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_bld-webfont.woff") format("woff"), url("fonts/brandon/brandon_bld-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_bld-webfont.svg#brandon_grotesquebold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesqueblack_italic';
+  src: url("fonts/brandon/brandon_blk_it-webfont.eot");
+  src: url("fonts/brandon/brandon_blk_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_blk_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_blk_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_blk_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_blk_it-webfont.svg#brandon_grotesqueblack_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesqueblack';
+  src: url("fonts/brandon/brandon_blk-webfont.eot");
+  src: url("fonts/brandon/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_blk-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_blk-webfont.woff") format("woff"), url("fonts/brandon/brandon_blk-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquelight_italic';
+  src: url("fonts/brandon/brandon_light_it-webfont.eot");
+  src: url("fonts/brandon/brandon_light_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_light_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_light_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_light_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_light_it-webfont.svg#brandon_grotesquelight_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquelight';
+  src: url("fonts/brandon/brandon_light-webfont.eot");
+  src: url("fonts/brandon/brandon_light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_light-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_light-webfont.woff") format("woff"), url("fonts/brandon/brandon_light-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_light-webfont.svg#brandon_grotesquelight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesqueMdIt';
+  src: url("fonts/brandon/brandon_med_it-webfont.eot");
+  src: url("fonts/brandon/brandon_med_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_med_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_med_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_med_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_med_it-webfont.svg#brandon_grotesqueMdIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("fonts/brandon/brandon_med-webfont.eot");
+  src: url("fonts/brandon/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_med-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_med-webfont.woff") format("woff"), url("fonts/brandon/brandon_med-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_med-webfont.svg#brandon_grotesquemedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesqueRgIt';
+  src: url("fonts/brandon/brandon_reg_it-webfont.eot");
+  src: url("fonts/brandon/brandon_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_reg_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_reg_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_reg_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesque_regularRg';
+  src: url("fonts/brandon/brandon_reg-webfont.eot");
+  src: url("fonts/brandon/brandon_reg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_reg-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_reg-webfont.woff") format("woff"), url("fonts/brandon/brandon_reg-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_reg-webfont.svg#brandon_grotesque_regularRg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquethin_italic';
+  src: url("fonts/brandon/brandon_thin_it-webfont.eot");
+  src: url("fonts/brandon/brandon_thin_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_thin_it-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_thin_it-webfont.woff") format("woff"), url("fonts/brandon/brandon_thin_it-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_thin_it-webfont.svg#brandon_grotesquethin_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'brandon_grotesquethin';
+  src: url("fonts/brandon/brandon_thin-webfont.eot");
+  src: url("fonts/brandon/brandon_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/brandon/brandon_thin-webfont.woff2") format("woff2"), url("fonts/brandon/brandon_thin-webfont.woff") format("woff"), url("fonts/brandon/brandon_thin-webfont.ttf") format("truetype"), url("fonts/brandon/brandon_thin-webfont.svg#brandon_grotesquethin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+section header {
+  background-color: #EBEEF7; }
+  section header ul li {
+    display: inline-block; }
+    section header ul li h1 {
+      font-family: 'Muli';
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      height: 45px;
+      line-height: 40px; }
+      section header ul li h1 a {
+        text-decoration: none;
+        color: #7281AD; }
+    section header ul li input.login {
+      height: 45px;
+      padding: 0 20px;
+      margin: 10px;
+      border: 1px solid #7281AD;
+      border-radius: 2px;
+      color: #7281AD;
+      background-color: transparent;
+      font-family: 'Muli';
+      font-weight: 100;
+      font-size: 12px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      transition: all .2s ease-in;
+      -webkit-transition: all .2s ease-in; }
+      section header ul li input.login:hover {
+        opacity: 0.6; }
+  section header ul li:last-child {
+    float: right; }
+
+section .start {
+  background-color: #EBEEF7; }
+  section .start ul {
+    display: flex;
+    text-align: center;
+    padding: 80px 0 40px 0; }
+    section .start ul li {
+      margin: 20px;
+      width: 26%;
+      height: auto; }
+      section .start ul li img {
+        width: 64px;
+        margin: 10px 0; }
+      section .start ul li p {
+        font-family: 'Muli';
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7281AD;
+        max-width: 170px;
+        margin: 0 auto; }
+    section .start ul li.start-arrow {
+      position: relative;
+      top: 56px;
+      width: 11%;
+      height: 2px;
+      background-color: #7281AD; }
+      section .start ul li.start-arrow:after {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: -3px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 16px;
+        border-color: transparent transparent transparent #7281AD; }
+
+section .model {
+  background-color: #f3f3f3;
+  width: calc(100% - 80px);
+  height: auto;
+  margin: 20px 40px; }
+  @media only screen and (max-width: 360px) {
+    section .model {
+      width: calc(100% - 40px);
+      margin: 20px; } }
+  section .model h2 {
+    color: #7281AD;
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Muli';
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase; }
+  section .model_template {
+    text-align: center;
+    max-height: 690px;
+    overflow: hidden;
+    margin: 10px; }
+    section .model_template li {
+      position: relative;
+      display: inline-block;
+      background-color: #ffffff;
+      width: 250px;
+      height: 320px;
+      margin: 10px;
+      border-radius: 1px;
+      border: 1px solid #dadada;
+      -moz-box-shadow: 0px 0px 5px 0px #cccccc;
+      -webkit-box-shadow: 0px 0px 5px 0px #cccccc;
+      -o-box-shadow: 0px 0px 5px 0px #cccccc;
+      box-shadow: 0px 0px 5px 0px #cccccc;
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=#cccccc, Direction=NaN, Strength=5);
+      /*div{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0,0,0,0.6);
+				}*/
+      /*input[type="button"]:active ~ div{
+				    display: block;
+				}*/ }
+      section .model_template li a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 220px;
+        background: url(../images/photo3-min.jpg) no-repeat;
+        background-size: cover;
+        background-position: center; }
+        section .model_template li a .model_template_active {
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 25px 25px;
+          background-image: url(../images/search.png);
+          transition: all .2s ease-in;
+          -webkit-transition: all .2s ease-in; }
+          section .model_template li a .model_template_active:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.6); }
+        section .model_template li a .model_template_detail {
+          display: none;
+          position: fixed;
+          z-index: 999;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.8); }
+          section .model_template li a .model_template_detail_close {
+            float: right;
+            width: 20px;
+            padding: 12px 18px;
+            margin: 10px;
+            border: 0;
+            background-image: url(../images/close.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20px;
+            outline: none;
+            cursor: pointer;
+            transition: all .2s ease-in;
+            -webkit-transition: all .2s ease-in; }
+            section .model_template li a .model_template_detail_close:hover {
+              opacity: 0.8; }
+          section .model_template li a .model_template_detail_image {
+            width: 60%;
+            height: 520px;
+            margin: 40px auto 20px;
+            background: url(../images/photo3-min.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; }
+          section .model_template li a .model_template_detail h3 {
+            color: #ffffff;
+            font-size: 14px;
+            text-transform: uppercase; }
+          section .model_template li a .model_template_detail_dispo {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 100px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 1px;
+            -moz-box-shadow: 0px 0px 5px 0px #cccccc;
+            -webkit-box-shadow: 0px 0px 5px 0px #cccccc;
+            -o-box-shadow: 0px 0px 5px 0px #cccccc;
+            box-shadow: 0px 0px 5px 0px #cccccc;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color=#cccccc, Direction=NaN, Strength=5); }
+            section .model_template li a .model_template_detail_dispo p {
+              padding: 10px;
+              font-family: 'Muli';
+              font-size: 14px;
+              font-weight: 100;
+              color: #7281AD;
+              border-bottom: 1px solid #dadada; }
+            section .model_template li a .model_template_detail_dispo ul {
+              width: 60%;
+              margin: 0 auto;
+              display: flex; }
+              section .model_template li a .model_template_detail_dispo ul li {
+                border: 0;
+                margin: 0 10px 15px 10px;
+                box-shadow: none;
+                height: auto;
+                font-family: 'Muli';
+                font-size: 12px;
+                font-weight: 100;
+                color: #7281AD; }
+                section .model_template li a .model_template_detail_dispo ul li:before {
+                  content: '';
+                  display: block;
+                  width: 64px;
+                  height: 64px;
+                  margin: 0 auto;
+                  background-size: 32px;
+                  background-repeat: no-repeat;
+                  background-position: center; }
+              section .model_template li a .model_template_detail_dispo ul li:first-child:before {
+                background-image: url(../images/indesign.png); }
+              section .model_template li a .model_template_detail_dispo ul li:nth-child(2):before {
+                background-image: url(../images/photoshop.png); }
+              section .model_template li a .model_template_detail_dispo ul li:nth-child(3):before {
+                background-image: url(../images/illustrator.png); }
+              section .model_template li a .model_template_detail_dispo ul li:last-child:before {
+                background-image: url(../images/pdf.png); }
+        section .model_template li a span {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          padding: 10px 12px;
+          font-family: 'Muli';
+          font-size: 14px;
+          font-weight: bold;
+          color: #7281AD;
+          background-color: #ffffff;
+          text-transform: uppercase;
+          border-radius: 1px; }
+      section .model_template li h3 {
+        font-family: 'Muli';
+        font-weight: 100;
+        padding: 10px; }
+      section .model_template li input {
+        position: relative;
+        width: calc(100% - 80px);
+        margin: 10px 40px;
+        padding: 10px 0;
+        border: 0;
+        background: transparent;
+        outline: none;
+        transition: all .2s ease-in;
+        -webkit-transition: all .2s ease-in; }
+        section .model_template li input:hover {
+          opacity: 0.6; }
+      section .model_template li input[type="checkbox"]:after {
+        content: 'Selectionner';
+        position: absolute;
+        z-index: 99;
+        top: -10px;
+        left: -38px;
+        margin: 10px 40px;
+        padding: 10px 40px;
+        border: 0;
+        border-radius: 2px;
+        background-color: #7281AD;
+        color: #ffffff;
+        font-family: 'Muli';
+        font-weight: 100;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer; }
+      section .model_template li input[type="checkbox"]:checked {
+        opacity: 0.6; }
+      section .model_template li input[type="checkbox"]:checked ~ img {
+        display: block; }
+      section .model_template li input[type="checkbox"]:not(:checked) ~ img {
+        display: none; }
+      section .model_template li img {
+        display: none;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 22px; }
+  section .model_button {
+    text-align: center; }
+    section .model_button li {
+      display: inline-block;
+      margin: 10px; }
+      section .model_button li input {
+        background-color: #dadada;
+        border-radius: 50%;
+        border: 0;
+        outline: none;
+        cursor: pointer; }
+
+section footer {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #EBEEF7; }
+  section footer a.validation {
+    display: block;
+    width: 100px;
+    border: 1px solid #7281AD;
+    border-radius: 2px;
+    color: #7281AD;
+    font-family: 'Muli';
+    font-weight: 100;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: transparent;
+    padding: 16px 32px;
+    margin: 30px auto;
+    text-align: center;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in; }
+    section footer a.validation:hover {
+      opacity: 1; }
+
+section .logsign {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  top: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%; }
+  section .logsign_window {
+    margin: 80px auto;
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    background-color: #ffffff; }
+    section .logsign_window_content {
+      position: relative;
+      height: 100%; }
+      section .logsign_window_content input.close {
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+        padding: 12px 18px;
+        border: 0;
+        background-color: #ffffff;
+        background-image: url(../images/croix-bleu.png);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        background-position: center;
+        outline: none;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: all .2s ease-in;
+        -webkit-transition: all .2s ease-in; }
+        section .logsign_window_content input.close:hover {
+          opacity: 1; }
+      section .logsign_window_content form {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+        section .logsign_window_content form .btn {
+          position: absolute;
+          top: -187px;
+          display: inline-block;
+          width: 50%;
+          height: 40px;
+          margin: 0;
+          color: #7281AD;
+          font-family: 'Muli';
+          font-size: 18px;
+          font-weight: 300;
+          text-transform: uppercase;
+          border: 0;
+          border-bottom: 2px solid #7281AD;
+          background-color: #ffffff;
+          outline: none;
+          cursor: pointer; }
+        section .logsign_window_content form input[type="radio"].btn:after {
+          content: "";
+          position: absolute;
+          top: 187px;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+          color: #7281AD;
+          font-family: 'Muli';
+          font-size: 18px;
+          font-weight: 300;
+          text-transform: uppercase; }
+        section .logsign_window_content form input[type="radio"].btn:checked:after {
+          border: 0;
+          border-bottom: 1px solid #7281AD;
+          background-color: #ffffff; }
+        section .logsign_window_content form input[type="radio"].btn-login:checked + label.form {
+          display: block; }
+        section .logsign_window_content form input[type="radio"].btn-sign:checked + label.form {
+          display: block; }
+        section .logsign_window_content form input[type="radio"].btn:not(:checked):after {
+          color: #AFB6CC; }
+        section .logsign_window_content form input[type="radio"].btn-login:after {
+          content: "Login";
+          height: 70px;
+          line-height: 75px; }
+        section .logsign_window_content form input[type="radio"].btn-sign:after {
+          content: "Sign up";
+          left: 100%;
+          height: 70px;
+          line-height: 75px; }
+        section .logsign_window_content form input[type="radio"].btn-sign:before {
+          content: "";
+          position: absolute;
+          left: 54%;
+          top: 600px;
+          z-index: 99999;
+          width: 100%;
+          height: 40px;
+          cursor: pointer; }
+          @media only screen and (max-width: 400px) {
+            section .logsign_window_content form input[type="radio"].btn-sign:before {
+              left: 24%;
+              padding: 0 40px; } }
+        section .logsign_window_content form label.label-name {
+          display: inline-block; }
+        section .logsign_window_content form label.form {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: 100px;
+          text-align: center;
+          transition: all 8s ease-in;
+          -webkit-transition: all .8s ease-in; }
+          section .logsign_window_content form label.form input {
+            display: block;
+            border: 1px solid #AFB6CC;
+            border-radius: 1px;
+            background: #ffffff;
+            height: 40px;
+            width: 70%;
+            max-width: 300px;
+            font-size: 12px;
+            font-family: 'Muli';
+            margin: 10px auto 0;
+            padding-left: 10px;
+            color: #AFB6CC;
+            outline: none;
+            cursor: pointer; }
+            section .logsign_window_content form label.form input:hover {
+              opacity: 0.8; }
+            @media only screen and (max-width: 400px) {
+              section .logsign_window_content form label.form input {
+                width: 90%; } }
+          section .logsign_window_content form label.form input[type="text"],
+          section .logsign_window_content form label.form input[type="password"] {
+            max-width: 288px;
+            width: calc(70% - 12px); }
+            @media only screen and (max-width: 400px) {
+              section .logsign_window_content form label.form input[type="text"],
+              section .logsign_window_content form label.form input[type="password"] {
+                width: calc(90% - 12px); } }
+          section .logsign_window_content form label.form input.btn-valid {
+            background: #AFB6CC;
+            color: #ffffff; }
+          section .logsign_window_content form label.form input.btn-fb {
+            margin: 20px auto 80px;
+            background: #6679B5;
+            color: #ffffff; }
+          section .logsign_window_content form label.form input.btn-link-sign {
+            width: 180px; }
+          section .logsign_window_content form label.form a {
+            font-size: 10px;
+            font-weight: 100;
+            text-decoration: underline;
+            text-align: right;
+            max-width: 300px;
+            width: 70%;
+            display: block;
+            margin: 5px auto; }
+            @media only screen and (max-width: 400px) {
+              section .logsign_window_content form label.form a {
+                width: 90%; } }
+
+section.secondPage header {
+  background-color: #EBEEF7; }
+  section.secondPage header ul li {
+    display: inline-block; }
+    section.secondPage header ul li h1 {
+      font-family: 'Muli';
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      height: 45px;
+      line-height: 40px; }
+      section.secondPage header ul li h1 a {
+        text-decoration: none;
+        color: #7281AD; }
+    section.secondPage header ul li input[type="checkbox"].login-connect {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 20px;
+      cursor: pointer;
+      outline: none;
+      transition: all .2s ease-in;
+      -webkit-transition: all .2s ease-in; }
+      section.secondPage header ul li input[type="checkbox"].login-connect:before {
+        content: 'Jessy Dupin';
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 100%;
+        min-width: 100px;
+        text-align: center;
+        padding: 15px 20px;
+        margin: 10px;
+        border: 1px solid #7281AD;
+        border-radius: 2px;
+        color: #7281AD;
+        background-color: #EBEEF7;
+        font-family: 'Muli';
+        font-weight: 100;
+        font-size: 12px;
+        text-transform: uppercase;
+        cursor: pointer;
+        outline: none; }
+      section.secondPage header ul li input[type="checkbox"].login-connect:hover {
+        opacity: 0.6; }
+      section.secondPage header ul li input[type="checkbox"].login-connect:checked, section.secondPage header ul li input[type="checkbox"].login-connect:checked ~ div.list-log {
+        display: block;
+        opacity: 0.6; }
+    section.secondPage header ul li div.list-log {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 62px;
+      background-color: #ffffff;
+      width: 150px;
+      height: auto;
+      margin: 10px;
+      border-radius: 4px;
+      border: 1px solid #dadada;
+      /*-moz-box-shadow: 0px 0px 5px 0px #cccccc;
+					-webkit-box-shadow: 0px 0px 5px 0px #cccccc;
+					-o-box-shadow: 0px 0px 5px 0px #cccccc;
+					box-shadow: 0px 0px 5px 0px #cccccc;
+					filter:progid:DXImageTransform.Microsoft.Shadow(color=#cccccc, Direction=NaN, Strength=5);*/
+      transition: all .2s ease-in;
+      -webkit-transition: all .2s ease-in; }
+      section.secondPage header ul li div.list-log:before, section.secondPage header ul li div.list-log:after {
+        content: '';
+        position: absolute;
+        top: -11px;
+        left: 110px;
+        width: 0;
+        height: 0;
+        border-style: solid; }
+      section.secondPage header ul li div.list-log:before {
+        top: -12px;
+        left: 109px;
+        border-width: 0 11px 12px 11px;
+        border-color: transparent transparent #dadada transparent; }
+      section.secondPage header ul li div.list-log:after {
+        border-width: 0 10px 12px 10px;
+        border-color: transparent transparent #ffffff transparent; }
+      section.secondPage header ul li div.list-log a {
+        text-decoration: none;
+        font-family: 'Muli';
+        font-weight: 100;
+        font-size: 12px;
+        color: #7281AD;
+        display: block;
+        padding: 18px 0;
+        text-align: center; }
+        section.secondPage header ul li div.list-log a:hover {
+          color: #EBEEF7; }
+        section.secondPage header ul li div.list-log a:first-child {
+          border-bottom: 1px solid #f3f3f3; }
+        section.secondPage header ul li div.list-log a:last-child {
+          border-top: 1px solid #dadada; }
+  section.secondPage header ul li:last-child {
+    float: right; }
+
+section.secondPage .start {
+  background-color: #EBEEF7; }
+  section.secondPage .start ul {
+    display: flex;
+    text-align: center;
+    padding: 80px 0 40px 0; }
+    section.secondPage .start ul li {
+      margin: 20px;
+      width: 26%;
+      height: auto; }
+      section.secondPage .start ul li img {
+        width: 64px;
+        margin: 10px 0; }
+      section.secondPage .start ul li p {
+        font-family: 'Muli';
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 18px;
+        color: #7281AD;
+        max-width: 170px;
+        margin: 0 auto; }
+    section.secondPage .start ul li.start-arrow {
+      position: relative;
+      top: 56px;
+      width: 11%;
+      height: 2px;
+      background-color: #7281AD; }
+      section.secondPage .start ul li.start-arrow:after {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: -3px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 16px;
+        border-color: transparent transparent transparent #7281AD; }
+
+section.secondPage .model_template {
+  width: calc(100% - 20px);
+  text-align: left; }
+  section.secondPage .model_template li {
+    float: left;
+    display: inline-block; }
+    section.secondPage .model_template li a {
+      height: 100%; }
+      section.secondPage .model_template li a span {
+        display: none; }
+    section.secondPage .model_template li h3 {
+      display: none; }
+    section.secondPage .model_template li input.select {
+      display: none; }
+    section.secondPage .model_template li img {
+      display: none; }
+  section.secondPage .model_template ul {
+    float: left;
+    width: calc(100% - 272px);
+    display: inline-block;
+    font-family: 'Muli';
+    font-weight: 100;
+    font-size: 14px; }
+    section.secondPage .model_template ul li {
+      background: none;
+      border: 0;
+      box-shadow: none;
+      width: auto;
+      height: auto; }
+      section.secondPage .model_template ul li:first-child, section.secondPage .model_template ul li:nth-child(2) {
+        display: block;
+        width: 100%; }
+      section.secondPage .model_template ul li h3 {
+        display: block; }
+      section.secondPage .model_template ul li input:after {
+        display: none; }

@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'gulp' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /Applications/MAMP/htdocs/curriculumvit-easy/package.json
+5 warn package.json angular2-quickstart@1.0.0 No repository field.
+6 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/angular2/package.json
+7 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/concurrently/package.json
+8 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/es6-promise/package.json
+9 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/es6-shim/package.json
+10 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/package.json
+11 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp-connect/package.json
+12 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp-less/package.json
+13 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp-typescript/package.json
+14 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp-util/package.json
+15 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/lite-server/package.json
+16 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/reflect-metadata/package.json
+17 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/rxjs/package.json
+18 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/systemjs/package.json
+19 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/typescript/package.json
+20 verbose installManyTop reading scoped package data from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/zone.js/package.json
+21 verbose readDependencies loading dependencies from /Applications/MAMP/htdocs/curriculumvit-easy/package.json
+22 verbose install gulp is installed as 3.9.1
+23 silly cache add args [ 'gulp', null ]
+24 verbose cache add spec gulp
+25 silly cache add parsed spec Result {
+25 silly cache add   raw: 'gulp',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'gulp',
+25 silly cache add   rawSpec: '',
+25 silly cache add   spec: 'latest',
+25 silly cache add   type: 'tag' }
+26 silly addNamed gulp@latest
+27 verbose addNamed "latest" is being treated as a dist-tag for gulp
+28 info addNameTag [ 'gulp', 'latest' ]
+29 silly mapToRegistry name gulp
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/gulp
+33 verbose addNameTag registry:https://registry.npmjs.org/gulp not in flight; fetching
+34 verbose request uri https://registry.npmjs.org/gulp
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 01:37:54
+37 verbose request id ada0abe276c25a73
+38 verbose etag "WORBNWKZZXOG0PDZKO4AD5JM"
+39 http request GET https://registry.npmjs.org/gulp
+40 http 304 https://registry.npmjs.org/gulp
+41 verbose headers { date: 'Thu, 10 Mar 2016 00:37:55 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   etag: '"WORBNWKZZXOG0PDZKO4AD5JM"',
+41 verbose headers   age: '160',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-ams4140-AMS',
+41 verbose headers   'x-cache': 'HIT',
+41 verbose headers   'x-cache-hits': '2',
+41 verbose headers   'x-timer': 'S1457570275.181659,VS0,VE0',
+41 verbose headers   vary: 'Accept' }
+42 silly get cb [ 304,
+42 silly get   { date: 'Thu, 10 Mar 2016 00:37:55 GMT',
+42 silly get     via: '1.1 varnish',
+42 silly get     'cache-control': 'max-age=300',
+42 silly get     etag: '"WORBNWKZZXOG0PDZKO4AD5JM"',
+42 silly get     age: '160',
+42 silly get     connection: 'keep-alive',
+42 silly get     'x-served-by': 'cache-ams4140-AMS',
+42 silly get     'x-cache': 'HIT',
+42 silly get     'x-cache-hits': '2',
+42 silly get     'x-timer': 'S1457570275.181659,VS0,VE0',
+42 silly get     vary: 'Accept' } ]
+43 verbose etag https://registry.npmjs.org/gulp from cache
+44 verbose get saving gulp to /Users/Esco/.npm/registry.npmjs.org/gulp/.cache.json
+45 verbose correctMkdir /Users/Esco/.npm correctMkdir not in flight; initializing
+46 silly addNameTag next cb for gulp with tag latest
+47 silly addNamed gulp@3.9.1
+48 verbose addNamed "3.9.1" is a plain semver version for gulp
+49 silly cache afterAdd gulp@3.9.1
+50 verbose afterAdd /Users/Esco/.npm/gulp/3.9.1/package/package.json not in flight; writing
+51 verbose correctMkdir /Users/Esco/.npm correctMkdir not in flight; initializing
+52 verbose afterAdd /Users/Esco/.npm/gulp/3.9.1/package/package.json written
+53 silly install resolved [ { name: 'gulp',
+53 silly install resolved     description: 'The streaming build system',
+53 silly install resolved     version: '3.9.1',
+53 silly install resolved     homepage: 'http://gulpjs.com',
+53 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+53 silly install resolved     author:
+53 silly install resolved      { name: 'Fractal',
+53 silly install resolved        email: 'contact@wearefractal.com',
+53 silly install resolved        url: 'http://wearefractal.com/' },
+53 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+53 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+53 silly install resolved     bin: { gulp: './bin/gulp.js' },
+53 silly install resolved     man: [ 'gulp.1' ],
+53 silly install resolved     dependencies:
+53 silly install resolved      { archy: '^1.0.0',
+53 silly install resolved        chalk: '^1.0.0',
+53 silly install resolved        deprecated: '^0.0.1',
+53 silly install resolved        'gulp-util': '^3.0.0',
+53 silly install resolved        interpret: '^1.0.0',
+53 silly install resolved        liftoff: '^2.1.0',
+53 silly install resolved        minimist: '^1.1.0',
+53 silly install resolved        orchestrator: '^0.3.0',
+53 silly install resolved        'pretty-hrtime': '^1.0.0',
+53 silly install resolved        semver: '^4.1.0',
+53 silly install resolved        tildify: '^1.0.0',
+53 silly install resolved        v8flags: '^2.0.2',
+53 silly install resolved        'vinyl-fs': '^0.3.0' },
+53 silly install resolved     devDependencies:
+53 silly install resolved      { coveralls: '^2.7.0',
+53 silly install resolved        eslint: '^1.7.3',
+53 silly install resolved        'eslint-config-gulp': '^2.0.0',
+53 silly install resolved        'graceful-fs': '^3.0.0',
+53 silly install resolved        istanbul: '^0.3.0',
+53 silly install resolved        jscs: '^2.3.5',
+53 silly install resolved        'jscs-preset-gulp': '^1.0.0',
+53 silly install resolved        'marked-man': '^0.1.3',
+53 silly install resolved        mkdirp: '^0.5.0',
+53 silly install resolved        mocha: '^2.0.1',
+53 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+53 silly install resolved        q: '^1.0.0',
+53 silly install resolved        rimraf: '^2.2.5',
+53 silly install resolved        should: '^5.0.1' },
+53 silly install resolved     scripts:
+53 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+53 silly install resolved        lint: 'eslint . && jscs *.js bin/ lib/ test/',
+53 silly install resolved        pretest: 'npm run lint',
+53 silly install resolved        test: 'mocha --reporter spec',
+53 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+53 silly install resolved     engines: { node: '>= 0.9' },
+53 silly install resolved     license: 'MIT',
+53 silly install resolved     gitHead: '9c14e3a13a73a32e424f144d62566671b2fcdbed',
+53 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+53 silly install resolved     _id: 'gulp@3.9.1',
+53 silly install resolved     _shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+53 silly install resolved     _from: 'gulp@latest',
+53 silly install resolved     _npmVersion: '2.14.14',
+53 silly install resolved     _nodeVersion: '0.10.41',
+53 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+53 silly install resolved     maintainers: [ [Object], [Object] ],
+53 silly install resolved     dist:
+53 silly install resolved      { shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+53 silly install resolved        tarball: 'http://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' },
+53 silly install resolved     _npmOperationalInternal:
+53 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+53 silly install resolved        tmp: 'tmp/gulp-3.9.1.tgz_1454957415500_0.15343931876122952' },
+53 silly install resolved     directories: {},
+53 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz',
+53 silly install resolved     readme: 'ERROR: No README data found!' } ]
+54 info install gulp@3.9.1 into /Applications/MAMP/htdocs/curriculumvit-easy
+55 info installOne gulp@3.9.1
+56 verbose installOne of gulp to /Applications/MAMP/htdocs/curriculumvit-easy not in flight; installing
+57 verbose correctMkdir /Users/Esco/.npm/_locks correctMkdir not in flight; initializing
+58 verbose lock using /Users/Esco/.npm/_locks/gulp-20919f59f925f8df.lock for /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+59 silly install write writing gulp 3.9.1 to /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+60 verbose unbuild node_modules/gulp
+61 info preuninstall gulp@3.9.1
+62 info uninstall gulp@3.9.1
+63 verbose unbuild rmStuff gulp@3.9.1 from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules
+64 silly gentlyRm /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/.bin/gulp is being gently removed
+65 silly gentlyRm verifying /Applications/MAMP/htdocs/curriculumvit-easy is an npm working directory
+66 silly gentlyRm containing path /Applications/MAMP/htdocs/curriculumvit-easy is under npm's control, in /Applications/MAMP/htdocs/curriculumvit-easy
+67 silly gentlyRm deletion target /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/.bin/gulp is under /Applications/MAMP/htdocs/curriculumvit-easy
+68 verbose gentlyRm vacuuming from /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/.bin/gulp up to /Applications/MAMP/htdocs/curriculumvit-easy
+69 silly vacuum-fs removing /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/.bin/gulp
+70 silly vacuum-fs quitting because other entries in /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/.bin
+71 info postuninstall gulp@3.9.1
+72 silly gentlyRm /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp is being purged from base /Applications/MAMP/htdocs/curriculumvit-easy
+73 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+74 silly vacuum-fs purging /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+75 verbose unlock done using /Users/Esco/.npm/_locks/gulp-20919f59f925f8df.lock for /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+76 verbose stack Error: EACCES: permission denied, unlink '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver'
+76 verbose stack     at Error (native)
+77 verbose cwd /Applications/MAMP/htdocs/curriculumvit-easy
+78 error Darwin 15.0.0
+79 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp"
+80 error node v4.4.0
+81 error npm  v2.14.20
+82 error path /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver
+83 error code EACCES
+84 error errno -13
+85 error syscall unlink
+86 error Error: EACCES: permission denied, unlink '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver'
+86 error     at Error (native)
+86 error  { [Error: EACCES: permission denied, unlink '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver']
+86 error   errno: -13,
+86 error   code: 'EACCES',
+86 error   syscall: 'unlink',
+86 error   path: '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver' }
+87 error Please try running this command again as root/Administrator.
+88 verbose exit [ -13, true ]
+89 verbose unbuild node_modules/gulp
+90 silly gentlyRm /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp is being purged from base /Applications/MAMP/htdocs/curriculumvit-easy
+91 verbose gentlyRm don't care about contents; nuking /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+92 silly vacuum-fs purging /Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp
+93 error error rolling back Error: EACCES: permission denied, unlink '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver'
+93 error error rolling back     at Error (native)
+93 error error rolling back  { [Error: EACCES: permission denied, unlink '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver']
+93 error error rolling back   errno: -13,
+93 error error rolling back   code: 'EACCES',
+93 error error rolling back   syscall: 'unlink',
+93 error error rolling back   path: '/Applications/MAMP/htdocs/curriculumvit-easy/node_modules/gulp/node_modules/.bin/semver' }

@@ -20,6 +20,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+<<<<<<< HEAD
+=======
+                    this.title = "My application";
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44
                 }
                 AppComponent = __decorate([
                     core_1.Component({
@@ -34,3 +38,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=app.component.js.map
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44

@@ -1,6 +1,11 @@
 var gulp    = require('gulp');
+<<<<<<< HEAD
 var less    = require('gulp-less');
 //var sass    = require('gulp-sass');
+=======
+//var less    = require('gulp-less');
+var sass    = require('gulp-sass');
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44
 var connect = require('gulp-connect');
 var ts      = require('gulp-typescript');
 var gutil   = require('gulp-util');
@@ -16,6 +21,7 @@ var staticFiles = [
   appFolder + '**/*.png',
 ];
 
+<<<<<<< HEAD
 gulp.task('less', function () {
   return gulp.src(appFolder + 'less/style.less')
     .pipe(less().on('error', function(err){
@@ -24,6 +30,24 @@ gulp.task('less', function () {
     }))
     .pipe(gulp.dest(distFolder + 'css'))
     .pipe(connect.reload());
+=======
+
+// gulp.task('less', function () {
+//   return gulp.src(appFolder + 'less/style.less')
+//     .pipe(less().on('error', function(err){
+//       gutil.log(err);
+//       this.emit('end');
+//     }))
+//     .pipe(gulp.dest(distFolder + 'css'))
+//     .pipe(connect.reload());
+// });
+
+gulp.task('sass', function () {
+  return gulp.src(appFolder + 'sass/screen.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(distFolder + 'css'));
+  
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44
 });
 
 gulp.task('ts', function() {
@@ -48,11 +72,20 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function () {
+<<<<<<< HEAD
   gulp.watch([appFolder + 'less/**/*.less'], ['less']);
+=======
+  // gulp.watch([appFolder + 'less/**/*.less'], ['less']);
+  gulp.watch([appFolder + './sass/**/*.scss'], ['sass']);
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44
   gulp.watch([appFolder + '**/*.ts'], ['ts']);
   gulp.watch(staticFiles, ['static']);
 });
 
+<<<<<<< HEAD
 gulp.task('build', ['ts', 'less', 'static']);
+=======
+gulp.task('build', ['ts', 'sass', 'static']);
+>>>>>>> 93c9441d0e47cebd9f654f7f3971299422e47a44
 
 gulp.task('default', ['build', 'connect', 'watch']);

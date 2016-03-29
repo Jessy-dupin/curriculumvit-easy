@@ -1,0 +1,59 @@
+/*body{
+	overflow: hidden;
+}*/
+
+.global{
+	background: #ffffff;
+	-moz-box-shadow: 0px 0px 15px 2px #3C3C3C;
+	-webkit-box-shadow: 0px 0px 15px 2px #3C3C3C;
+	-o-box-shadow: 0px 0px 15px 2px #3C3C3C;
+	box-shadow: 0px 0px 15px 2px #3C3C3C;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#c0c0c0, Direction=NaN, Strength=5);
+	margin: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 9999;
+    width: 100%;
+    overflow-y: scroll;
+    -moz-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+
+.global.active-left{
+	margin: 0 0 0 280px;
+	width: calc(100% - 280px);
+	@media only screen and (max-width : 869px) {
+	    width: 100%;
+		.header, .content{
+			opacity: 0.2;
+		}
+	}
+}
+.global.active-right{
+	margin: 0 ;
+	width: calc(100% - 280px);
+	@media only screen and (max-width : 869px) {
+		margin: 0;
+		margin-left: -280px;
+	    width: 100%;
+		.header, .content{
+			opacity: 0.2;
+		}
+	}
+}
+.left, .right{
+    -moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+}
+.left.active-left{
+	left: 0 !important;
+	z-index: 8888 !important;
+}
+.right.active-right{
+	right: 0 !important;
+	z-index: 8888 !important;
+}
