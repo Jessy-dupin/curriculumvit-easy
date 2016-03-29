@@ -1,4 +1,4 @@
-System.register(['angular2/core', './tplItemApp.component'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,31 +10,28 @@ System.register(['angular2/core', './tplItemApp.component'], function(exports_1,
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tplItemApp_component_1;
-    var tplAppComponent;
+    var core_1;
+    var tplConfirmAppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (tplItemApp_component_1_1) {
-                tplItemApp_component_1 = tplItemApp_component_1_1;
             }],
         execute: function() {
-            tplAppComponent = (function () {
-                function tplAppComponent() {
+            tplConfirmAppComponent = (function () {
+                function tplConfirmAppComponent() {
                 }
-                tplAppComponent = __decorate([
+                tplConfirmAppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-tpl',
-                        templateUrl: 'app/templates/template.html',
-                        directives: [tplItemApp_component_1.tplItemAppComponent]
+                        selector: 'my-tplconfirm',
+                        templateUrl: 'app/templates/templateConfirm.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], tplAppComponent);
-                return tplAppComponent;
+                ], tplConfirmAppComponent);
+                return tplConfirmAppComponent;
             }());
-            exports_1("tplAppComponent", tplAppComponent);
+            exports_1("tplConfirmAppComponent", tplConfirmAppComponent);
         }
     }
 });
+//# sourceMappingURL=tplConfirmApp.component.js.map

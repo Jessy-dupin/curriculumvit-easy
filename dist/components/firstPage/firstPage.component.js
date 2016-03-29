@@ -1,4 +1,4 @@
-System.register(['angular2/core', './tplItemApp.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './tplApp.component', './tplConfirmApp.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,31 +10,36 @@ System.register(['angular2/core', './tplItemApp.component'], function(exports_1,
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, tplItemApp_component_1;
-    var tplAppComponent;
+    var core_1, tplApp_component_1, tplConfirmApp_component_1;
+    var firstPageComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (tplItemApp_component_1_1) {
-                tplItemApp_component_1 = tplItemApp_component_1_1;
+            function (tplApp_component_1_1) {
+                tplApp_component_1 = tplApp_component_1_1;
+            },
+            function (tplConfirmApp_component_1_1) {
+                tplConfirmApp_component_1 = tplConfirmApp_component_1_1;
             }],
         execute: function() {
-            tplAppComponent = (function () {
-                function tplAppComponent() {
+            firstPageComponent = (function () {
+                function firstPageComponent() {
+                    this.title = "My application";
                 }
-                tplAppComponent = __decorate([
+                firstPageComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-tpl',
-                        templateUrl: 'app/templates/template.html',
-                        directives: [tplItemApp_component_1.tplItemAppComponent]
+                        selector: 'my-firstPage',
+                        templateUrl: 'app/templates/firstPage.html',
+                        directives: [tplApp_component_1.tplAppComponent, tplConfirmApp_component_1.tplConfirmAppComponent]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], tplAppComponent);
-                return tplAppComponent;
+                ], firstPageComponent);
+                return firstPageComponent;
             }());
-            exports_1("tplAppComponent", tplAppComponent);
+            exports_1("firstPageComponent", firstPageComponent);
         }
     }
 });
+//# sourceMappingURL=firstPage.component.js.map

@@ -1,4 +1,4 @@
-System.register(['angular2/core', './headApp.component', './subHeadApp.component', './tplApp.component', './tplConfirmApp.component', './loginApp.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './headApp.component', './subHeadApp.component', './firstPage/firstPage.component', './secondPage/secondPage.component', './loginApp.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './headApp.component', './subHeadApp.component
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, headApp_component_1, subHeadApp_component_1, tplApp_component_1, tplConfirmApp_component_1, loginApp_component_1;
+    var core_1, headApp_component_1, subHeadApp_component_1, firstPage_component_1, secondPage_component_1, loginApp_component_1;
     var AppComponent;
     return {
         setters:[
@@ -23,11 +23,11 @@ System.register(['angular2/core', './headApp.component', './subHeadApp.component
             function (subHeadApp_component_1_1) {
                 subHeadApp_component_1 = subHeadApp_component_1_1;
             },
-            function (tplApp_component_1_1) {
-                tplApp_component_1 = tplApp_component_1_1;
+            function (firstPage_component_1_1) {
+                firstPage_component_1 = firstPage_component_1_1;
             },
-            function (tplConfirmApp_component_1_1) {
-                tplConfirmApp_component_1 = tplConfirmApp_component_1_1;
+            function (secondPage_component_1_1) {
+                secondPage_component_1 = secondPage_component_1_1;
             },
             function (loginApp_component_1_1) {
                 loginApp_component_1 = loginApp_component_1_1;
@@ -41,7 +41,7 @@ System.register(['angular2/core', './headApp.component', './subHeadApp.component
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/templates/app.html',
-                        directives: [headApp_component_1.headAppComponent, subHeadApp_component_1.subHeadAppComponent, tplApp_component_1.tplAppComponent, tplConfirmApp_component_1.tplConfirmAppComponent, loginApp_component_1.loginAppComponent]
+                        directives: [headApp_component_1.headAppComponent, subHeadApp_component_1.subHeadAppComponent, firstPage_component_1.firstPageComponent, secondPage_component_1.secondPageComponent, loginApp_component_1.loginAppComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
