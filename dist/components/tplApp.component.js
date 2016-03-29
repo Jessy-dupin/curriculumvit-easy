@@ -1,4 +1,4 @@
-System.register(['angular2/core', './headApp.component', './subHeadApp.component', './tplApp.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './tplItemApp.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,38 +10,32 @@ System.register(['angular2/core', './headApp.component', './subHeadApp.component
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, headApp_component_1, subHeadApp_component_1, tplApp_component_1;
-    var AppComponent;
+    var core_1, tplItemApp_component_1;
+    var tplAppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (headApp_component_1_1) {
-                headApp_component_1 = headApp_component_1_1;
-            },
-            function (subHeadApp_component_1_1) {
-                subHeadApp_component_1 = subHeadApp_component_1_1;
-            },
-            function (tplApp_component_1_1) {
-                tplApp_component_1 = tplApp_component_1_1;
+            function (tplItemApp_component_1_1) {
+                tplItemApp_component_1 = tplItemApp_component_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
-                    this.title = "My application";
+            tplAppComponent = (function () {
+                function tplAppComponent() {
                 }
-                AppComponent = __decorate([
+                tplAppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        templateUrl: 'app/templates/app.html',
-                        directives: [headApp_component_1.headAppComponent, subHeadApp_component_1.subHeadAppComponent, tplApp_component_1.tplAppComponent]
+                        selector: 'my-tpl',
+                        templateUrl: 'app/templates/template.html',
+                        directives: [tplItemApp_component_1.tplItemAppComponent]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], tplAppComponent);
+                return tplAppComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("tplAppComponent", tplAppComponent);
         }
     }
 });
+//# sourceMappingURL=tplApp.component.js.map
