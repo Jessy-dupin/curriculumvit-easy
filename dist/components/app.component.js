@@ -45,4 +45,3 @@ System.register(['angular2/core', './headApp.component', './subHeadApp.component
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
