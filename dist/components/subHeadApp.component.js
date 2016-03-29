@@ -11,27 +11,27 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var secondAppComponent;
+    var subHeadAppComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            secondAppComponent = (function () {
-                function secondAppComponent() {
+            subHeadAppComponent = (function () {
+                function subHeadAppComponent() {
                 }
-                secondAppComponent = __decorate([
+                subHeadAppComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-head',
-                        templateUrl: 'app/templates/secondPage.html'
+                        selector: 'my-subhead',
+                        templateUrl: 'app/templates/subHeader.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], secondAppComponent);
-                return secondAppComponent;
+                ], subHeadAppComponent);
+                return subHeadAppComponent;
             }());
-            exports_1("secondAppComponent", secondAppComponent);
+            exports_1("subHeadAppComponent", subHeadAppComponent);
         }
     }
 });
-//# sourceMappingURL=secondApp.component.js.map
+//# sourceMappingURL=subHeadApp.component.js.map
