@@ -2,6 +2,8 @@
   <head>
     <title>Curriculumvit-easy</title>
     <!-- 1. Load libraries -->
+    <script src="//cdn.auth0.com/js/lock-9.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- IE required polyfills, in this exact order -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
@@ -9,6 +11,7 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
     <link rel="stylesheet" href="dist/css/screen.css">
     <!-- <link rel="stylesheet" href="app/stylesheets/screen.css"> -->
     <!-- 2. Configure SystemJS -->
@@ -18,12 +21,35 @@
           dist: {
             format: 'register',
             defaultExtension: 'js'
+          },
+          "/angular2-jwt": {
+            "defaultExtension": "js"
           }
+        },
+        map: {
+          "angular2-jwt": "node_modules/angular2-jwt/angular2-jwt.js"
         }
       });
       System.import('dist/boot')
             .then(null, console.error.bind(console));
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '569751863186441',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
     </script>
+
   </head>
   <!-- 3. Display the application -->
   <body>

@@ -38,4 +38,3 @@ System.register(['angular2/core', './tplItemApp.component'], function(exports_1,
         }
     }
 });
-//# sourceMappingURL=tplApp.component.js.map
