@@ -48,7 +48,7 @@ section{
 		ul{
 			display: flex;
 			text-align: center;
-			padding: 80px 0 0px 0;
+			padding: 50px 0 0px 0;
 			li{
 				margin: 30px;
 				width: 26%;
@@ -89,7 +89,6 @@ section{
 		}
 	}
 	.model{
-		background-color: #f3f3f3;
 		height: auto;
 		margin: 20px;
 		@media only screen and (max-width : 360px) {
@@ -266,7 +265,7 @@ section{
 					}
 				}
 				a.one{
-					background-size: cover; 
+					background-size: cover;
 					background: url(../images/cv1.jpg) no-repeat;
 					display: block;
 					position: relative;
@@ -275,7 +274,7 @@ section{
 					background-size: cover;
 				}
 				a.two{
-					background-size: cover; 
+					background-size: cover;
 					background: url(../images/cv2.jpg) no-repeat;
 					display: block;
 					position: relative;
@@ -284,7 +283,7 @@ section{
 					background-size: cover;
 				}
 				a.three{
-					background-size: cover; 
+					background-size: cover;
 					background: url(../images/cv3.jpg) no-repeat;
 					display: block;
 					position: relative;
@@ -382,18 +381,17 @@ section{
 		a.validation{
 			display: block;
 			width: 100px;
-			border: 1px solid #7281AD;
+			border: 2px solid #7281AD;
 		    border-radius: 2px;
 		    color: #7281AD;
 		    font-family: 'Muli';
-			font-weight: 100;
+			font-weight: bold;
 			font-size: 14px;
 			text-transform: uppercase;
 			background: transparent;
 			padding: 16px 32px;
 			margin: 30px auto;
 			text-align: center;
-			opacity: 0.6;
 			cursor: pointer;
 			transition: all .2s ease-in;
 			-webkit-transition: all .2s ease-in;
