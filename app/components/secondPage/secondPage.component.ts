@@ -1,11 +1,11 @@
 import {Component} from 'angular2/core';
-
-//import {tplAppComponent} from './tplApp.component';
+import {validAppComponent} from './validApp.component';
+import {validAppBtnComponent} from './validAppBtn.component';
 
 @Component({
     selector: 'my-secondPage',
     templateUrl: 'app/templates/secondPage.html',
-    directives: []
+    directives: [validAppComponent]
 })
 
 export class secondPageComponent {
