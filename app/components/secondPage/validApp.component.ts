@@ -8,4 +8,4 @@ import {validAppItemComponent} from './validAppItem.component';
     directives: [validAppDetailsComponent, validAppItemComponent]
 })
 
-export class validAppComponent {}
+export class validAppComponent{}
