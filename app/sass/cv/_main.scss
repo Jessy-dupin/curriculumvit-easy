@@ -183,7 +183,7 @@ section{
 					    	width: 60%;
 							height: 520px;
 							margin: 40px auto 20px;
-							background: url(../images/photo3-min.jpg) no-repeat;
+							background: url(../images/cv1.jpg) no-repeat;
 							background-size: cover;
 							background-position: center;
 					    }
@@ -361,6 +361,7 @@ section{
 			}
 		}
 		&_button{
+			display: none;
 			text-align: center;
 			li{
 				display: inline-block;
@@ -553,7 +554,7 @@ section{
 						}
 						input[type="text"],
 						input[type="password"]{
-							max-width: 288px;
+							max-width: 300px;
 							width: calc(70% - 12px);
 							@media only screen and (max-width : 400px) {
 								width: calc(90% - 12px);
