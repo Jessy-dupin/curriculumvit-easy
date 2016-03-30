@@ -169,7 +169,7 @@ section.secondPage{
 				float: left;
 				display: inline-block;
 				a{
-					background-size: cover; 
+					background-size: cover;
 					background: url(../images/cv1.jpg) no-repeat;
 					display: block;
 					position: relative;
@@ -222,6 +222,9 @@ section.secondPage{
 			}
 		}
 	}
+section .model_template li input{
+	width: 0;
+}
 
 	footer{
 
